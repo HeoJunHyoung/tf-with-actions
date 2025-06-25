@@ -8,7 +8,7 @@ resource "aws_vpc" "backend-vpc" {
 
 module "s3" {
   source = "./modules/s3"
-  bucket_name = "backend-bucket-h6bro-2"
+  bucket_name = "backend-bucket-h6bro"
 }
 
 module "backend" {
@@ -17,5 +17,5 @@ module "backend" {
 
 module "dynamodb" {
   source = "./modules/dynamodb"
-  table_name = "terraform-lock-2"
+  table_name = "terraform-lock"
 }
