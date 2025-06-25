@@ -17,5 +17,5 @@ module "backend" {
 
 module "dynamodb" {
   source = "./modules/dynamodb"
-  table_name = "terraform-lock"
+  table_name = "terraform-lock2"
 }
